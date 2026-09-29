@@ -1,0 +1,8 @@
+VAR
+	fb_controller : {REDUND_UNREPLICABLE} FB_Regulator;
+	fb_motor : {REDUND_UNREPLICABLE} FB_Motor;
+	Speed : {REDUND_UNREPLICABLE} REAL;
+	Enable : {REDUND_UNREPLICABLE} BOOL;
+	fb_motor2 : {REDUND_UNREPLICABLE} FB_Motor;
+	counter : {REDUND_UNREPLICABLE} UDINT;
+END_VAR
