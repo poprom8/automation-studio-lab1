@@ -8,7 +8,12 @@
 void _CYCLIC ProgramCyclic(void)
 {
 	counter++;
-	if ((counter >= 200)&&(counter <= 600))
+	if (counter >= 1100)
+	{
+		counter = 0;
+	}
+
+	if ((counter >= 100)&&(counter < 600))
 	{
 		Speed = 100.0;
 	}

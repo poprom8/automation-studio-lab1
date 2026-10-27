@@ -8,7 +8,7 @@
 #ifdef __cplusplus
 	};
 #endif
-/* TODO: Add your comment here */
+/* PI controller with output limit and anti-windup */
 void FB_Regulator(struct FB_Regulator* inst)
 {
 	float yp;
@@ -40,7 +40,7 @@ void FB_Regulator(struct FB_Regulator* inst)
 		inst->u=y;
 	}
 	
-	inst->integrator.in = inst->k_i * inst->e + (inst->u - y);
+	inst->integrator.in = inst->k_i * inst->e + (inst->u - y) / inst->dt;
 	inst->integrator.dt = inst->dt;
 	FB_Integrator(&inst->integrator);
 	

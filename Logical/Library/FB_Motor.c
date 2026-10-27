@@ -8,7 +8,7 @@
 #ifdef __cplusplus
 	};
 #endif
-/* TODO: Add your comment here */
+/* DC motor model: W(s) = 1/(ke*(Tm*s+1)) */
 void FB_Motor(struct FB_Motor* inst)
 {
 	inst->integrator.in = (inst->u / inst->ke -  inst->w) / inst->tm;

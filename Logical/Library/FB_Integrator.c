@@ -8,7 +8,7 @@
 #ifdef __cplusplus
 	};
 #endif
-/* TODO: Add your comment here */
+/* Discrete integrator: out = out + in*dt */
 void FB_Integrator(struct FB_Integrator* inst)
 {
 	inst->out = inst->out + inst->in * inst->dt;
